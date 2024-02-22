@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: beige;
+    font-family: 'Courier', monospace;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-container {
+    text-align: center;
+}
+
+.quote {
+    margin: 0 0 20px 0; /* 20px space between the quotes */
+}
+
+.navigation button {
+    border: none;
+    background-color: transparent;
+    border-radius: 50px; /* Creates an ellipse shape */
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#backButton {
+    left: 10px;
+    bottom: 10px;
+}
+
+#nextButton {
+    right: 10px;
+    bottom: 10px;
+}
+
+#homeButton {
+    left: 10px;
+    top: 10px;
+}
+
+.navigation button:hover {
+    background-color: white;
+    color: black;
+}

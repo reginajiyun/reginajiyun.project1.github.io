@@ -1,5 +1,6 @@
 body, html {
     margin: 0;
+    margin-top: 10%;
     background: beige;
     font-family: 'Courier', monospace;
     color: black;
@@ -11,6 +12,9 @@ body, html {
 
 .quote-container {
     text-align: center;
+    width: 60%;
+    line-height: 1cm;
+    
 }
 
 .quote {

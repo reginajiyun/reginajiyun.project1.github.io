@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    background: beige;
+    font-family: 'Courier', monospace;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-container {
+    text-align: center;
+    width: 60%;
+    line-height: 1cm;
+}
+
+.quote {
+    margin: 0 0 20px 0; /* 20px space between the quotes */
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 60pt;
+    color: red;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 15pt;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+.navigation button {
+    border: none;
+    background-color: transparent;
+    border-radius: 50px; /* Creates an ellipse shape */
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#backButton {
+    left: 10px;
+    bottom: 10px;
+}
+
+#nextButton {
+    right: 10px;
+    bottom: 10px;
+}
+
+#homeButton {
+    left: 10px;
+    top: 10px;
+}
+
+.navigation button:hover {
+    background-color: white;
+    color: black;
+}

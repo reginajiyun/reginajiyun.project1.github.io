@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100vh; /* Full viewport height */
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Courier', monospace;
+}
+
+.credits-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.credits {
+    position: absolute;
+    width: 100%;
+    bottom: -100%; /* Start below the view */
+}
+
+.the-end {
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: red;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.credits {
+    animation: scroll 20s linear infinite; /* Adjust duration as needed */
+}

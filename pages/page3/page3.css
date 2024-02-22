@@ -19,14 +19,18 @@ body, html {
     margin: 0 0 20px 0; /* 20px space between the quotes */
 }
 
-span{
+.quote1 {
+    margin: 0 0 20px 0; /* 20px space between the quotes */
+    font-style: italic;
+    font-size: 300%;
     color: red;
-    font-size: 200%;
 }
 
-span:hover {
-    background-color: red;
-    color: white;
+.quote2 {
+    margin: 0 0 20px 0; /* 20px space between the quotes */
+    font-style: italic;
+    font-size: 150%;
+    color: red;
 }
 
 .navigation button {

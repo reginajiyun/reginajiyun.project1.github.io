@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier', monospace;
+}
+
+.content h1 {
+    font-size: 5em;
+}
+
+button#nextButton {
+    margin-top: 50px; /* Adjust the space between the text and button as needed */
+    padding: 20px 40px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50px; /* Creates an ellipse shape for sufficiently wide content */
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+button#nextButton:hover {
+    background-color: white;
+    color: black;
+}
